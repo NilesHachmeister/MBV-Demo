@@ -1,0 +1,196 @@
+/* red = #c32126 */
+/* yellow = #f5d40d  */
+/* orange = #e78931  */
+/* lightblue = #3dc2db  */
+/* grey = #c5c5c5  */
+/* green = #359846 */
+/* white = #ffffff */
+/* bluegrey = #9cc6e1  */
+/* darkblue = #143557 */
+
+:root {
+    --nav-primary-color: #9cc6e1;
+    --nav-secondary-color: #143557;
+}
+
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    position: relative;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: var(--nav-primary-color);
+    color: black;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.sub-dropdown-head {
+    width: 20%;
+}
+
+#mbv-logo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: var(--nav-primary-color);
+    min-width: 100%;
+    top: 100%;
+    text-align: left;
+    box-shadow: 10px 5px 5px grey;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    opacity: 0;
+    transform: translateY(-2em);
+    z-index: 2;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    visibility: hidden;
+}
+
+.nav-button:hover .dropdown-content {
+    color: black;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.container {
+    max-width: none;
+    padding-left: 0;
+}
+
+.col-3 {
+    padding-right: 0;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    height: 10%;
+    border-top: 2px solid var(--nav-secondary-color);
+    border-bottom: 2px solid var(--nav-secondary-color);
+}
+
+.dropdown-content p:hover {
+    transition: 0.3s;
+    background-color: var(--nav-secondary-color);
+    color: white;
+}
+
+p {
+    padding: 15px;
+    margin: 0;
+}
+
+
+.dashboard-dropdown p:hover {
+    transition: 0.3s;
+    background-color: var(--nav-secondary-color);
+    color: white;
+}
+
+#dashboard:hover~.dashboard-dropdown {
+    display: flex;
+}
+
+.dashboard-dropdown {
+    display: flex;
+    position: absolute;
+    background-color: var(--nav-primary-color);
+    z-index: 1;
+    top: 100%;
+    left: -150%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    color: black;
+    width: 600%;
+    opacity: 0;
+    transform: translateY(-1em);
+    z-index: 2;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    visibility: hidden;
+}
+
+.nav-button:hover .dashboard-dropdown {
+    display: flex;
+    color: black;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.dashboard-dropdown:hover {
+    display: flex;
+    cursor: pointer;
+    background-color: var(--nav-primary-color);
+}
+
+.sub-dropdown-head {
+    text-align: center;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: larger;
+    border-bottom: 2px solid var(--nav-secondary-color);
+    transition: 0.3s;
+}
+
+.sub-dropdown-head:hover {
+    transition: 0.3s;
+    background-color: var(--nav-secondary-color);
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.sub-dropdown-content p:hover {
+    transition: 0.3s;
+    background-color: var(--nav-secondary-color);
+    color: white;
+}
+
+.sub-dropdown-content {
+    position: absolute;
+    background-color: var(--nav-primary-color);
+    width: 20%;
+    top: 100%;
+    text-align: left;
+    box-shadow: 10px 5px 5px grey;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(-1em);
+    z-index: 2;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    visibility: hidden;
+}
+
+.sub-dropdown-head:hover .sub-dropdown-content {
+    color: black;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.last-item-in-list {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
