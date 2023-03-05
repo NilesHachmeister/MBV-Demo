@@ -12,11 +12,11 @@
 <body>
     <header>
         <nav>
-            <div class="container w-100">
+            <div class="container">
                 <div class=" first-row">
 
                     <div id="logo-div">
-                        <img src="./assets/MBV_logo.svg" id="mbv-logo">
+                        <img src="./assets/MBV_logo.svg" id="mbv-logo" alt="mybizview logo">
                     </div>
 
                     <div class="nav-button" id="login-button">
@@ -30,34 +30,40 @@
                     <div class="nav-button" id="dashboard">
                         <h2>Dashboards</h2>
                         <div class="dashboard-dropdown">
-                            <div class="sub-dropdown-head">Summary
+                            <div class="sub-dropdown-head">
+                                <div class="sub-dropdown-catagory">Summary</div>
                                 <div class="sub-dropdown-content">
-                                    <p>Company Summary</p>
-                                    <p>Field P &amp; L</p>
+                                    <p class="end-point">Company Summary</p>
+                                    <p class="end-point">Field P &amp; L</p>
                                 </div>
                             </div>
-                            <div class="sub-dropdown-head">Sales
+                            <div class="sub-dropdown-head">
+                                <div class="sub-dropdown-catagory">Sales</div>
                                 <div class="sub-dropdown-content">
-                                    <p>By Product</p>
-                                    <p>Promotions</p>
-                                    <p>Aggregator Sales</p>
+                                    <p class="end-point">By Product</p>
+                                    <p class="end-point">Promotions</p>
+                                    <p class="end-point">Aggregator Sales</p>
                                 </div>
                             </div>
-                            <div class="sub-dropdown-head">Exectution
+                            <div class="sub-dropdown-head">
+                                <div class="sub-dropdown-catagory">Exectution</div>
                                 <div class="sub-dropdown-content">
-                                    <p>Delivery Execution</p>
-                                    <p>Production Times</p>
-                                    <p>Labor</p>
-                                    <p>Complaints</p>
+                                    <p class="end-point">Delivery Execution</p>
+                                    <p class="end-point">Production Times</p>
+                                    <p class="end-point">Labor</p>
+                                    <p class="end-point">Complaints</p>
                                 </div>
                             </div>
-                            <div class="sub-dropdown-head">Labor
+                            <div class="sub-dropdown-head">
+                                <div class="sub-dropdown-catagory">Labor</div>
                                 <div class="sub-dropdown-content">
-                                    <p>AVG Hourly Wage</p>
-                                    <p>Bench Planning</p>
+                                    <p class="end-point">AVG Hourly Wage</p>
+                                    <p class="end-point">Bench Planning</p>
                                 </div>
                             </div>
-                            <div class="sub-dropdown-head end-point-highlight">COS</div>
+                            <div class="sub-dropdown-head">
+                                <div class="sub-dropdown-catagory  end-point" id="cos-dashboard"> COS</div>
+                            </div>
                         </div>
 
                     </div>
@@ -88,6 +94,68 @@
             </div>
         </nav>
     </header>
+
+    <div id="main-content">
+        <div id="sidebar-div">
+            <h3 class="sidebar-header">
+                Favorites
+            </h3>
+            <ul id="favorites-list">
+                <li class="end-point">Schedule Daily</li>
+                <li class="end-point">My Summary</li>
+                <li class="end-point">Production Times</li>
+                <li class="end-point">Field P&L</li>
+                <li class="end-point">Critical COS</li>
+            </ul>
+
+            <div id="blog-post">
+                <h3 class="sidebar-header">
+                    Feature Story
+                </h3>
+
+
+
+
+                <p> Pizza Hut partnered once again with OU to host the Boomer Book It promotional window for Men's &
+                    Women's basketball. The nominated class that ended up being selected and hosted at the men's game
+                    versus Kansas was Ms. Campbell's 4th grade class from James Griffith Intermediate in Choctaw, OK!
+                    <br>
+                    <br>
+                    Ms. Campbell's class arrived early, got to give the Sooners high fives at the last run out on the
+                    court, were recognized with a live shot on the video board and of course, ate some pizza!
+                </p>
+
+
+                <div id="featured-image-container">
+                    <img src="./assets/blog-img.png" id="featured-image" alt="featured image">
+                </div>
+
+                <p>
+                    <a>Continue to read this story</a>
+                </p>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div id="dashboard-div">
+
+
+            <iframe title="pizza_and_mixes_merged"
+                src=https://app.powerbi.com/reportEmbed?reportId=977cff68-e228-4700-95c5-b454266550b3&autoAuth=true&ctid=1bc75fa6-8ef0-44a5-8371-670cfa3d2e8e
+                frameborder="0" allowFullScreen="true"></iframe>
+
+            <!-- <iframe title="pizza_and_mixes_merged" width="1140" height="541.25"
+                src=https://app.powerbi.com/reportEmbed?reportId=977cff68-e228-4700-95c5-b454266550b3&autoAuth=true&ctid=1bc75fa6-8ef0-44a5-8371-670cfa3d2e8e
+                frameborder="0" allowFullScreen="true"></iframe> -->
+        </div>
+    </div>
+
 
 </body>
 
